@@ -6,44 +6,49 @@
     <link rel="stylesheet" href="style.css">
     <title>Página de login</title>
 </head>
-<body>
+<body class="background">
+    <div class="container">
+        <div class="title">
+            <img src="img/github.png" >
+            <h1><a href="https://github.com/Gustavo-De-Sousa">Gustavo de Sousa Silva</a></h1>
+        </div>
+        <form id="formulario" novalidate>
+            <div class="titulo">
+                <h1>Faça o seu login</h1>
+                <div class="barra-horizontal">
+            </div>
+            </div>
 
-    <form id="formulario" novalidate>
-        <div class="titulo">
-            <h1>Faça o seu login</h1>
-            <div class="barra-horizontal">
-        </div>
-        </div>
 
+            <div class="campo-input">
+                <label for="email" >Seu e-mail* </label>
+                <input type="text" id="email" placeholder="exemple@gmail.com" >
+                <p id="mensagem-email"></p>
 
-        <div class="campo-input">
-            <label for="email" >Seu e-mail* </label>
-            <input type="text" id="email" placeholder="exemple@gmail.com" >
-            <p id="mensagem-email"></p>
+            </div>
 
-        </div>
-
-        <div class="campo-input">
-            <label for="password" >Sua senha* </label>
-            <input maxlength="10" type="password" id="senha" placeholder="exemple1234" >
-            <p id="mensagem-senha"></p>
-        </div>
-        <div class="lembrar-me">
-            <input class="checkbox" type="checkbox">
-            <p>Lembre-me </p>
-        </div>
-        <div id="mensagem"></div>
-        <div class="butao">
-        <button  type="submit">Entrar</button>
-        <button  type="button" >cadastre-se</button>
-        </div>
-    
-        <div class="esqueceu-senha">
-            <p>Esqueceu sua senha ? <a href="recuperar_senha.html">Clique aqui</a></p>
-        </div>
-
+            <div class="campo-input">
+                <label for="password" >Sua senha* </label>
+                <input maxlength="10" type="password" id="senha" placeholder="exemple1234" >
+                <p id="mensagem-senha"></p>
+            </div>
+            <div class="lembrar-me">
+                <input class="checkbox" type="checkbox">
+                <p>Lembre-me </p>
+            </div>
+            <div id="mensagem"></div>
+            <div class="butao">
+            <button  type="submit">Entrar</button>
+            <button  type="button" >cadastre-se</button>
+            </div>
         
-    </form>
+            <div class="esqueceu-senha">
+                <p>Esqueceu sua senha ? <a href="recuperar_senha.html">Clique aqui</a></p>
+            </div>
+
+
+        </form>
+     </div>
 
 </body>
 <script src="tela_login.js">

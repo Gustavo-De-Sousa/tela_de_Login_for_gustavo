@@ -4,7 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.background{
 
+    background-image: linear-gradient(0deg, black, rgb(86, 19, 150));
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
 @media (max-width: 768px) {
     body {
         background-color: blueviolet;
@@ -18,12 +24,35 @@
     gap: 10px;
     flex-wrap: nowrap;
 }
+}
 
 .butao button {
     flex: 1;
     width: 132px;
     min-width: 0;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.title a{
+        color: white;
+        text-decoration: none;
+}
+.title h1{
+    font-size: 20px;
+}
+img{
+    padding: 9px;
+    width: 50px;
 
 }
 body{
@@ -88,7 +117,7 @@ form{
 }
 
 a{
-    color: #48036E;
+    color: #880aff;
 
 }
 
