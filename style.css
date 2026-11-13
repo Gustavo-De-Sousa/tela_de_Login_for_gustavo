@@ -11,7 +11,7 @@
         padding: 10px;
     }
     .butao {
-    white-space: nowrap;
+    white-space: nowrap !important;
 
     width: 130px;
 
