@@ -1,6 +1,7 @@
 
 const formulario = document.getElementById("formulario");
 const mensagem = document.getElementById("mensagem");
+const mensagemEmail = document.getElementById("mensagem-email");
 const inputEmail = document.getElementById("email");
 const inputSenha = document.getElementById("senha");
 
@@ -9,14 +10,30 @@ const inputSenha = document.getElementById("senha");
 const SenhaUsuario = "1234"
 const LoginUsuario = "teste12@gmail.com"
 
+
+formulario.addEventListener("input", function() {
+    if (email !== "" || senha !== ""){
+        mensagem.classList.remove("erro");
+    }
+
+});
+
+
 email.addEventListener("input", function() {
-    let email = document.getElementById('email').value;
-    if(email.endsWith("@gmail.com")){
-        console.log("sucess")
-    } else{
-        mensagem.innerHTML = "Precissa-se usar @gmail.com";
-        mensagem.classList.add("erro");
-    };
+
+    let valorEmail = email.value;
+
+    if (valorEmail.endsWith("@gmail.com")) {
+
+        mensagemEmail.innerHTML = "E-mail válido!";
+        mensagemEmail.classList.remove("erro");
+
+    } else {
+
+        mensagemEmail.innerHTML = "Precisa-se usar @gmail.com";
+        mensagemEmail.classList.add("erro");
+
+    }
 
 });
 
@@ -33,7 +50,9 @@ formulario.addEventListener("submit", function(event){
         mensagem.innerHTML = "Preencha todos os campos!";
         mensagem.classList.add("erro");
 
-    } else if (email === LoginUsuario && senha === SenhaUsuario ) {
+    } 
+
+    else if (email === LoginUsuario && senha === SenhaUsuario ) {
 
         mensagem.innerHTML = "Login realizado com sucesso!";
         mensagem.classList.add("sucesso");
