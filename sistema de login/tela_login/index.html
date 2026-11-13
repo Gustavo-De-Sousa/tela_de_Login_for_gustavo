@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de login</title>
+</head>
+<body>
+
+    <form id="formulario" novalidate>
+        <div class="titulo">
+            <h1>Faça o seu login</h1>
+            <div class="barra-horizontal">
+        </div>
+        </div>
+
+
+        <div class="campo-input">
+            <label for="email" >Seu e-mail* </label>
+            <input type="text" id="email" placeholder="exemple@gmail.com" >
+
+        </div>
+
+        <div class="campo-input">
+            <label for="password" >Sua senha* </label>
+            <input type="password" id="senha" placeholder="exemple1234" >
+        </div>
+        <div class="lembrar-me">
+            <input class="checkbox" type="checkbox">
+            <p>Lembre-me </p>
+        </div>
+        <div id="mensagem"></div>
+        <button class="button" onclick="validarSenha()" type="submit">Entrar</button>
+
+
+        <div class="esqueceu-senha">
+            <p>Esqueceu sua senha ? <a href="recuperar_senha.html">Clique aqui</a></p>
+        </div>
+        
+    </form>
+
+</body>
+<script src="tela_login.js">
+    
+</script>
+
+</html>
