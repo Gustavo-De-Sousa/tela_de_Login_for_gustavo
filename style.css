@@ -10,6 +10,16 @@
         background-color: blueviolet;
         padding: 10px;
     }
+    .butao {
+    white-space: nowrap;
+
+    width: 130px;
+
+    }
+
+    .butao button {
+        width: 130px;
+    }
 }
 body{
 
