@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form id="formulario">
+    <form id="formulario" novalidate>
         <div class="titulo">
             <h1>Faça o seu login</h1>
             <div class="barra-horizontal">
@@ -18,7 +18,7 @@
 
         <div class="campo-input">
             <label for="email" >Seu e-mail* </label>
-            <input type="email" id="email" placeholder="exemple@gmail.com" >
+            <input type="text" id="email" placeholder="exemple@gmail.com" >
 
         </div>
 
@@ -31,8 +31,7 @@
             <p>Lembre-me </p>
         </div>
         <div id="mensagem"></div>
-        <div id="notificacoes"></div>
-            <button class="button" type="submit">Entrar</button>
+        <button class="button" onclick="validarSenha()" type="submit">Entrar</button>
 
 
         <div class="esqueceu-senha">

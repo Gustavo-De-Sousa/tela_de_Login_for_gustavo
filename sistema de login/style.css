@@ -19,7 +19,9 @@ body{
     background-position: 50%;
     padding: 20px;
 }
-
+label{
+    color: black;
+}
 form{
 
     display: flex;
@@ -47,8 +49,14 @@ form{
     flex-direction: column;
     gap: 5px;
 }
+.checkbox:active{
+    transform: scale(0.70);
+    transition: background-color 0.1s ease, transform 0.3s ease;
+
+}
 .checkbox{
     cursor: pointer;
+
 }
 .lembrar-me{
     display: flex;
@@ -99,6 +107,14 @@ input{
 
 }
 
+
+input:active{
+    transform: scale(0.94);
+    background-color: #919191;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
 h1{
     font-size: 24px;
 
@@ -130,4 +146,16 @@ h1{
     background-color: #d4edda;
     color: #155724;
     border: 1px solid #28a745;
+}
+
+input::placeholder {
+    color: #535353 !important;
+
+}
+
+input.erro::placeholder {
+
+    color: red !important;
+
+
 }

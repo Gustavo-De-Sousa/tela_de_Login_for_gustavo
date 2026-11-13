@@ -9,6 +9,17 @@ const inputSenha = document.getElementById("senha");
 const SenhaUsuario = "1234"
 const LoginUsuario = "teste12@gmail.com"
 
+email.addEventListener("input", function() {
+    let email = document.getElementById('email').value;
+    if(email.endsWith("@gmail.com")){
+        console.log("sucess")
+    } else{
+        mensagem.innerHTML = "Precissa-se usar @gmail.com";
+        mensagem.classList.add("erro");
+    };
+
+});
+
 formulario.addEventListener("submit", function(event){
 
     event.preventDefault();
@@ -28,6 +39,7 @@ formulario.addEventListener("submit", function(event){
         mensagem.classList.add("sucesso");
 
     } 
+
     else if (email === "") {
 
         inputEmail.placeholder = "Digite seu email!";
@@ -43,16 +55,4 @@ formulario.addEventListener("submit", function(event){
         mensagem.classList.add("erro");
 
     }
-    let contador = 5;
-    function validarSenha (){
-        if(senha !== SenhaUsuario){
-
-                contador--;
-                mensagem.innerHTML = 'voce tem ' + contador;
-                mensagem.classList.add("erro");
-
-        }
-    }
-});
-
 
