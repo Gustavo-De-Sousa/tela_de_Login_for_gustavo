@@ -19,6 +19,8 @@ formulario.addEventListener("input", function() {
 });
 
 
+
+
 email.addEventListener("input", function() {
 
     let valorEmail = email.value;
@@ -74,5 +76,6 @@ formulario.addEventListener("submit", function(event){
         mensagem.classList.add("erro");
 
     }
+
 
 });
