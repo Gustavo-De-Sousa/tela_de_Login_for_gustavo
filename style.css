@@ -10,16 +10,21 @@
         background-color: blueviolet;
         padding: 10px;
     }
-    .butao {
-    white-space: nowrap !important;
+.butao {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
 
-    width: 130px;
+.butao button {
+    flex: 1;
+    width: 132px;
+    min-width: 0;
+}
 
-    }
-
-    .butao button {
-        width: 130px;
-    }
 }
 body{
 
