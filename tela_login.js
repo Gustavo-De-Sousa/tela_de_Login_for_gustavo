@@ -21,8 +21,8 @@ formulario.addEventListener("input", function() {
 
 
 
-email.addEventListener("input", function() {
-
+inputEmail.addEventListener("input", function() {
+i
     let valorEmail = email.value;
 
     if (valorEmail.endsWith("@gmail.com")) {
