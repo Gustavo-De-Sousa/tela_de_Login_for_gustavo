@@ -23,4 +23,13 @@ https://gustavo-de-sousa.github.io/tela_de_Login_for_gustavo
 Desenvolvido por Gustavo.
 
 
+## 🔑 Credenciais para teste
 
+Para testar a funcionalidade de login:
+
+- **E-mail:** teste@gmail.com
+- **Senha:** 1234
+
+As credenciais são fictícias e foram
+implementadas apenas para demonstração
+das validações e mensagens do sistema.
