@@ -26,13 +26,13 @@
         flex-wrap: nowrap;
     }
 
-    .botao button {
+     .button {
         flex: 1;
         width: auto;
         min-width: 0;
     }
 }
-.botao button {
+.button {
     flex: 1;
     width: 132px;
     min-width: 0;
@@ -118,14 +118,10 @@ form{
 .lembrar-me{
     display: flex;
     gap: 5px;
-
-   
-
 }
 
 a{
     color: #880aff;
-
 }
 
 .subtitulo{
@@ -133,7 +129,7 @@ a{
     justify-content: center;
 }
 
-button{
+.button{
 
     white-space: nowrap;
 
@@ -152,10 +148,10 @@ button{
     cursor: pointer;
 
 }
-button:focus{
+.button:focus{
     outline: none;
 }
-button:active{
+.button:active{
     transform: scale(0.98);
 }
 input{
