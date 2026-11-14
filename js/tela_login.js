@@ -19,8 +19,6 @@ formulario.addEventListener("input", function() {
 });
 
 
-
-
 inputEmail.addEventListener("input", function() {
 i
     let valorEmail = email.value;

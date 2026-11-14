@@ -37,9 +37,10 @@
                 <p>Lembre-me </p>
             </div>
             <div id="mensagem"></div>
-            <div class="butao">
+            <div class="botao">
             <button  type="submit">Entrar</button>
-            <button  type="button" >cadastre-se</button>
+            <button  type="button" id="abrir-tela">cadastre-se</button>
+
             </div>
         
             <div class="esqueceu-senha">
@@ -47,12 +48,56 @@
             </div>
 
 
+
         </form>
+    
      </div>
 
+
+
+ 
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <h2>cadastre-se</h2>
+            <p>Preencha seus dados para criar uma conta.</p>
+
+            <div class="campo-input-nome">
+                <label for="nome" >Nome* </label>
+                <input type="text" id="nome" placeholder="Eitor" >
+                <p id="mensagem-nome"></p>
+                <label for="sobrenome" >Sobrenome* </label>
+                <input type="text" id="sobrenome" placeholder="Ferreira" >
+
+            </div>
+
+            <div class="campo-input-email">
+                <label for="email" >Seu e-mail* </label>
+                <input type="text" id="email" placeholder="exemple@gmail.com" >
+                <p id="mensagem-email"></p>
+
+            </div>
+
+            <div class="campo-input-senha">
+                <label for="password" >Crie uma senha* </label>
+                <input maxlength="10" type="password" id="senha" placeholder="exemple1234" >
+
+                <label for="password" >Confirmar sua senha* </label>
+                <input maxlength="10" type="password" id="senha" placeholder="exemple1234" >
+                <p id="mensagem-senha"></p>
+            </div>
+            <div class="botao">
+                <button type="button" id="fecharModal">
+                    Fechar
+                </button>
+                <button type="button" id="Cadastrar">
+                    Cadastrar
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/tela_login.js" defer></script>
+    <script src="js/tela_cadastro.js" defer></script>
 </body>
-<script src="tela_login.js">
-    
-</script>
+
 
 </html>
