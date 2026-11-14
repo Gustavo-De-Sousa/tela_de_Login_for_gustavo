@@ -32,6 +32,10 @@
         min-width: 0;
     }
 }
+
+button{
+    background-color: transparent;
+}
 .button {
     flex: 1;
     width: 132px;
