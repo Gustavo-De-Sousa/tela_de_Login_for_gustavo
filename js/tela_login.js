@@ -20,18 +20,17 @@ formulario.addEventListener("input", function() {
 
 
 inputEmail.addEventListener("input", function() {
-i
-    let valorEmail = email.value;
+
+    let valorEmail = inputEmail.value;
 
     if (valorEmail.endsWith("@gmail.com")) {
 
-        mensagemEmail.innerHTML = "E-mail válido!";
-        mensagemEmail.classList.remove("erro");
+        mensagemEmail.classList.remove("erro-email");
 
     } else {
 
-        mensagemEmail.innerHTML = "Precisa-se usar @gmail.com";
-        mensagemEmail.classList.add("erro");
+        mensagemEmail.innerHTML = "Precisa-se usar '@gmail.com'";
+        mensagemEmail.classList.add("erro-email");
 
     }
 
@@ -68,6 +67,15 @@ formulario.addEventListener("submit", function(event){
 
         inputSenha.placeholder = "Digite sua senha!";
         inputSenha.classList.add("erro");
+    }
+    else if (
+        email === usuarios.email &&
+        senha === usuarios.senha
+    ) {
+
+        window.location.href = "test.html";
+
+
     }else {
 
         mensagem.innerHTML = "Email ou senha incorretos!";

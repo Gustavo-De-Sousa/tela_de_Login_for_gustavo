@@ -61,6 +61,7 @@ img{
     width: 50px;
 
 }
+
 body{
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -203,7 +204,17 @@ h1{
     border-radius: 8px;
     font-weight: bold;
 }
-
+.erro-email{
+    background-color: transparent;
+    display: flex !important;
+    margin: 0px !important;
+    color: red;
+    border: none;
+    outline: none;
+    padding: 3px 0px  0px 0px!important;
+    gap: 3px;
+    font-size: 12px;
+}
 .erro{
     display: flex !important;
     margin: 0px !important;
@@ -236,6 +247,7 @@ input.erro::placeholder {
 }
 
 #modal.modal-activo {
+
     position: fixed;
     inset: 0;
     z-index: 1000;
@@ -246,10 +258,13 @@ input.erro::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
 
 .modal-conteudo {
-    background-color: white;
+    
+    background-color: white; 
     font-family: Arial, Helvetica, sans-serif;
     padding: 25px;
     border-radius: 12px;
@@ -300,6 +315,12 @@ input.erro::placeholder {
 
 }
 
+.white-mode{
+    
+}
+.dark-mode{
+    display: none;
+}
 .campo-input-email input{
     display: flex;
     flex-direction: column;
@@ -316,4 +337,22 @@ input.erro::placeholder {
 .modal-conteudo h2{
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.nextprev a.quest-entry:link, .nextprev a.quest-entry:visited {
+    position: relative;
+    display: inline-block;
+    height: 44px;
+    padding: 0 24px;
+    border: 2px solid #a3cffb;
+    border-radius: 0;
+    background-color: #dfeefe;
+    color: #292524;
+    box-shadow: -5px 19px 0 -4px #000000;
+    font-family: "PS2P", monospace;
+    font-size: 10px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
 }
