@@ -17,19 +17,10 @@ Este foi meu primeiro projeto desenvolvido sem utilizar inteligência artificial
 Durante o desenvolvimento, enfrentei desafios, resolvi problemas e aprimorei minha lógica de programação.
 
 ## Demonstração ##
-https://gustavo-de-sousa.github.io/tela_de_Login_for_gustavo
+https://tela-de-login-for-gustavo.onrender.com
 
 ## Autor ##
 Desenvolvido por Gustavo.
 
+## 🚨Não use dados reais para cadastro. 🚨
 
-## 🔑 Credenciais para teste
-
-Para testar a funcionalidade de login:
-
-- **E-mail:** teste@gmail.com
-- **Senha:** 1234
-
-As credenciais são fictícias e foram
-implementadas apenas para demonstração
-das validações e mensagens do sistema.
