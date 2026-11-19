@@ -6,7 +6,7 @@ from database import cadastrar_usuario, verificar_senha, buscar_usuario
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = os.getenv("SCRET_KEY")
+app.secret_key = os.getenv("SECRET_KEY")
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 
@@ -86,4 +86,3 @@ def login():
     }), 200
 if __name__ == "__main__":
     app.run(debug=True)
-    app.run(host="0.0.0.0")
