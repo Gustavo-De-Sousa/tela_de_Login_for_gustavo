@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Página de login</title>
 </head>
 <body class="background">
     <div class="container">
         <div class="title">
-            <img src="img/github.png" >
+            <img src="{{ url_for('static', filename='img/github.png') }}" >
+
             <h1><a href="https://github.com/Gustavo-De-Sousa">Gustavo de Sousa Silva</a></h1>
         </div>
         <form id="formulario" novalidate>
@@ -18,11 +19,13 @@
                 <div class="botao-tema">
 
                     <button id="botao-tema-escuro" type="button">
-                        <img src="img/sol-nuvem (1).png" alt="Ativar tema escuro">
+                       <img src="{{ url_for('static', filename='img/sol-nuvem (1).png') }}" alt="Ativar tema escuro">
+
                     </button>
 
                     <button id="botao-tema-claro" type="button">
-                        <img src="img/sol-nuvem.png" alt="Ativar tema claro">
+                       <img src="{{ url_for('static', filename='img/sol-nuvem.png') }}" alt="Ativar tema claro">
+
                     </button>
 
                 </div>
@@ -42,7 +45,7 @@
             <div class="campo-senha">
                 <label for="password" >Sua senha* </label>
                 <input maxlength="10" type="password" id="senha" placeholder="exemple1234" >
-                <button type="button" id="vizualizar"><img src="img/estrabismo.png" alt=""></button>
+                <button type="button" id="vizualizar"><img src="{{ url_for('static', filename='img/estrabismo.png') }}" alt="Vizualizar senha"></button>
                 <p id="mensagem-senha"></p>
             </div>
             <div class="lembrar-me">
@@ -73,26 +76,26 @@
 
             <div class="campo-input-nome">
                 <label for="nome" >Nome* </label>
-                <input type="text" id="nome" placeholder="Eitor" >
+                <input type="text" id="cadastro-nome" placeholder="Eitor" >
                 <p id="mensagem-nome"></p>
                 <label for="sobrenome" >Sobrenome* </label>
-                <input type="text" id="sobrenome" placeholder="Ferreira" >
+                <input type="text" id="cadastro-sobrenome" placeholder="Ferreira" >
 
             </div>
 
             <div class="campo-input-email">
                 <label for="email" >Seu e-mail* </label>
-                <input type="text" id="email" placeholder="exemple@gmail.com" >
+                <input type="text" id="cadastro-email" placeholder="exemple@gmail.com" >
                 <p id="mensagem-email"></p>
 
             </div>
 
             <div class="campo-input-senha">
                 <label for="password" >Crie uma senha* </label>
-                <input maxlength="10" type="password" id="senha" placeholder="exemple1234" >
+                <input maxlength="10" type="password" id="cadastro-senha" placeholder="exemple1234" >
 
                 <label for="password" >Confirmar sua senha* </label>
-                <input maxlength="10" type="password" id="senha" placeholder="exemple1234" >
+                <input maxlength="10" type="password" id="cadastro-senha" placeholder="exemple1234" >
                 <p id="mensagem-senha"></p>
             </div>
             <div class="botao">
@@ -105,8 +108,8 @@
             </div>
         </div>
     </div>
-    <script src="js/tela_login.js" defer></script>
-    <script src="js/tela_cadastro.js" defer></script>
+    <script src="{{ url_for('static', filename='js/tela_login.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tela_cadastro.js') }}"></script>
 </body>
 
 
