@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from flask import Flask, request, jsonify, render_template, session, redirect, url_for
 from database import cadastrar_usuario, verificar_senha, buscar_usuario
 
-
+load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.getenv("SCRET_KEY")
